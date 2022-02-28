@@ -582,4 +582,69 @@ function sumOfNumbers(arr) {
   }
   return sum;
 }
-console.log(sumOfNumbers("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9")); 
+console.log(sumOfNumbers("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
+
+// Arrow function
+
+// Print odd numbers in an array
+
+let oddNum = (arr) => {
+  let arr1 = [];
+  for (let i in arr) {
+    if (arr[i] % 2 !== 0) {
+      arr1.push(arr[i]);
+    }
+  }
+  return arr1;
+};
+console.log(oddNum([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// Convert all the strings to title caps in a string array
+
+let Caps = (val) => {
+  let arr = val.split(" ");
+  let str = [];
+  for (let i in arr) {
+    str.push((arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)));
+  }
+  return str.join(" ");
+};
+console.log(Caps("hello world"));
+
+// Sum of all numbers in an array
+
+let sumOfAllNumbers = (arr) => {
+  let sum = 0;
+  for (let i in arr) {
+    sum = sum + arr[i];
+  }
+  console.log(sum);
+};
+sumOfAllNumbers([1, 2, 3, 4, 5]);
+
+// Return all the prime numbers in an array
+
+let primeNumbers = (arr) => {
+  return arr.filter((prm) => {
+    for (let i = 2; i < prm; i++) {
+      if (prm % i === 0) {
+        return false;
+      }
+    }
+    return prm > 1;
+  });
+};
+console.log(primeNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// Return all the palindromes in an array
+
+let Palindromes = (arr) => {
+  let arr1 = [];
+  for (let i in arr) {
+    if (arr[i].split("").reverse().join("") === arr[i]) {
+      arr1.push(arr[i]);
+    }
+  }
+  return arr1;
+};
+console.log(Palindromes(["level", "madam", "cry"]));
