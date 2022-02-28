@@ -140,3 +140,30 @@ palindrome("12321");
     console.log("array is palindrome", strn);
   }
 })(["level"]);
+
+// Return median of two sorted arrays of the same size
+
+// Anonymous function
+
+let median = function (arr1, arr2) {
+  // arr1.sort((a, b) => a - b);
+  console.log(arr1.sort((a, b) => a - b));
+  //   arr2.sort((a, b) => a - b);
+  console.log(arr2.sort((a, b) => a - b));
+
+  console.log(arr1[parseInt(arr1.length / 2)]);
+  console.log(arr2[parseInt(arr2.length / 2)]);
+};
+median([2, 4, 1, 3, 5], [7, 8, 5, 6, 4, 9]);
+
+// IIFE function
+
+(function (arr1, arr2) {
+  // arr1.sort((a, b) => a - b);
+  console.log(arr1.sort((a, b) => a - b));
+  //   arr2.sort((a, b) => a - b);
+  console.log(arr2.sort((a, b) => a - b));
+
+  console.log(arr1[parseInt(arr1.length / 2)]);
+  console.log(arr2[parseInt(arr2.length / 2)]);
+})([2, 4, 1, 3, 5], [7, 8, 5, 6, 4, 9]);
