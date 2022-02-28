@@ -99,3 +99,44 @@ prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     }
   }
 })([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// Return all the palindromes in an array
+
+// Anonymous Function
+
+var palindrome = function (str) {
+  let isPalin = true;
+  var len = str.length;
+  console.log(len);
+  var mid = Math.floor(len / 2);
+  console.log(mid);
+
+  for (var i = 0; i < mid; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+      return false;
+    }
+  }
+  if (isPalin === true) {
+    console.log("array is palindrome", str);
+  }
+};
+palindrome("12321");
+
+// IIFE function
+
+(function (strn) {
+  let isPalin = true;
+  var len = strn.length;
+  console.log(len);
+  var mid = Math.floor(len / 2);
+  console.log(mid);
+
+  for (var i = 0; i < mid; i++) {
+    if (strn[i] !== strn[len - 1 - i]) {
+      return false;
+    }
+  }
+  if (isPalin === true) {
+    console.log("array is palindrome", strn);
+  }
+})(["level"]);
