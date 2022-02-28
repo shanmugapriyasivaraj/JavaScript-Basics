@@ -39,3 +39,24 @@ caps(["karthik", "jessi"]);
     console.log("To UpperCase:", arr.toUpperCase());
   });
 })(["Varun", "Nithya"]);
+
+// Sum of all numbers in an array
+
+//Anonymous Function
+
+let frst = 0;
+let sum = function (arr) {
+  arr.forEach((arr) => {
+    frst = frst + arr;
+  });
+};
+sum([1, 2, 3, 4, 5, 6, 7, 8]);
+console.log("sum of all numbers:", frst);
+
+let first = 0;
+(function (sum) {
+  sum.forEach((sum) => {
+    first = first + sum;
+  });
+})([1, 2, 3, 4, 5, 6, 7, 8]);
+console.log("sum of all numbers:", first);
