@@ -167,3 +167,20 @@ median([2, 4, 1, 3, 5], [7, 8, 5, 6, 4, 9]);
   console.log(arr1[parseInt(arr1.length / 2)]);
   console.log(arr2[parseInt(arr2.length / 2)]);
 })([2, 4, 1, 3, 5], [7, 8, 5, 6, 4, 9]);
+
+// Remove duplicates from an array
+
+// Anonymous function
+
+let remove = function (val) {
+  let setArray = [...new Set(val)];
+  console.log(setArray);
+};
+remove(["a", "b", "c", "b"]);
+
+// IIFE function
+
+(function (val) {
+  let setArray = [...new Set(val)];
+  console.log(setArray);
+})(["a", "d", "e", "d"]);
