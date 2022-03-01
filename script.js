@@ -648,3 +648,27 @@ let Palindromes = (arr) => {
   return arr1;
 };
 console.log(Palindromes(["level", "madam", "cry"]));
+
+// class
+
+// area of Rectangle
+
+class rectangle {
+  constructor(value1, value2) {
+    this.value1 = value1;
+    this.value2 = value2;
+    this.value3 = this.value1 * this.value2;
+  }
+  getValue1() {
+    console.log(this.value1);
+  }
+  getValue2() {
+    console.log(this.value2);
+  }
+  getValue3() {
+    console.log(this.value3);
+  }
+}
+var rect = new rectangle(7, 5);
+
+rect.getValue3();
