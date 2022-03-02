@@ -672,3 +672,23 @@ class rectangle {
 var rect = new rectangle(7, 5);
 
 rect.getValue3();
+
+class Add {
+  constructor(a) {
+    this.a = a;
+  }
+  getAdd() {
+    console.log(this.a + this.b);
+  }
+}
+class addition extends Add {
+  constructor(a, b) {
+    super(a, b);
+    this.b = b;
+  }
+  getValue() {
+    this.getAdd();
+  }
+}
+var add = new addition(3, 7);
+add.getValue();
