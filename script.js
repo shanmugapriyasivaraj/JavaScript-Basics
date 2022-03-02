@@ -692,3 +692,23 @@ class addition extends Add {
 }
 var add = new addition(3, 7);
 add.getValue();
+
+class Sub {
+  constructor(a) {
+    this.a = a;
+  }
+  getSub() {
+    console.log(this.a - this.b);
+  }
+}
+class subtraction extends Sub {
+  constructor(a, b) {
+    super(a, b);
+    this.b = b;
+  }
+  getValue() {
+    this.getSub();
+  }
+}
+var sub = new subtraction(3, 7);
+sub.getValue();
