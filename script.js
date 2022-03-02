@@ -732,3 +732,26 @@ class Multiplication extends Mul {
 }
 var multi = new Multiplication(3, 7);
 multi.getValue();
+
+class Div {
+  constructor(a) {
+    this.a = a;
+  }
+  getDiv() {
+    console.log(this.a / this.b);
+  }
+}
+class Division extends Div {
+  constructor(a, b) {
+    super(a, b);
+    this.b = b;
+  }
+  getValue() {
+    this.getDiv();
+  }
+}
+var div = new Division(3, 7);
+var div1 = new Division(8, 2);
+
+div.getDiv();
+div1.getDiv();
