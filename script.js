@@ -712,3 +712,23 @@ class subtraction extends Sub {
 }
 var sub = new subtraction(3, 7);
 sub.getValue();
+
+class Mul {
+  constructor(a) {
+    this.a = a;
+  }
+  getMul() {
+    console.log(this.a * this.b);
+  }
+}
+class Multiplication extends Mul {
+  constructor(a, b) {
+    super(a, b);
+    this.b = b;
+  }
+  getValue() {
+    this.getMul();
+  }
+}
+var multi = new Multiplication(3, 7);
+multi.getValue();
