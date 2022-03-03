@@ -832,3 +832,8 @@ console.log(cost.getPrice());
 
 const fruits = ["Apple", "Orange", "Banana", "Mango"];
 console.log(fruits.toString());
+
+// join
+
+const fruit = ["Apple", "Orange", "Banana", "Mango"];
+console.log(fruit.join(" "));
