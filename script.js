@@ -862,5 +862,23 @@ console.log(fruits3);
 let fruits4 = ["Apple", "Orange", "Banana", "Mango"];
 fruits4.unshift("Kiwi");
 console.log(fruits4);
-console.log(fruits4.unshift());   //to find array length
+console.log(fruits4.unshift()); //to find array length
 
+// Changing Elements
+
+const fruits5 = ["Apple", "Orange", "Banana", "Mango"];
+fruits5[0] = "kiwi";
+console.log(fruits5);
+
+// Array length  --apply new element to array without using push
+
+const names = ["Nithya", "Varun", "Karthik"];
+
+names[names.length] = "Jessie";
+console.log(names);
+
+// Array Delete  (pop or shift )
+
+const fruits6 = ["Apple", "Orange", "Banana", "Mango"];
+delete fruits6[0];
+console.log(fruits6);
