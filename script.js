@@ -811,3 +811,17 @@ var circleDetails = new circle(7, "Blue");
 console.log(circleDetails.getCircumberance().toFixed(2));
 console.log(circleDetails.getArea().toFixed(2));
 console.log(circleDetails.color);
+
+class uber {
+  constructor(distance) {
+    this.baseFare = 50;
+    this.costPerKm = 10;
+    this.distance = distance;
+  }
+  getPrice() {
+    return this.baseFare + this.costPerKm * this.distance;
+  }
+}
+let cost = new uber(5);
+
+console.log(cost.getPrice());
