@@ -837,3 +837,16 @@ console.log(fruits.toString());
 
 const fruit = ["Apple", "Orange", "Banana", "Mango"];
 console.log(fruit.join(" "));
+
+// pop
+
+const fruits1 = ["Apple", "Orange", "Banana", "Mango"];
+console.log(fruits1.pop());
+console.log(fruits1);
+
+// push
+
+const fruits2 = ["Apple", "Orange", "Banana", "Mango"];
+fruits2.push("kiwi");
+console.log(fruits2);
+console.log(fruits2.push());
