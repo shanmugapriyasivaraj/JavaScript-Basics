@@ -790,3 +790,24 @@ let movies = new movie("Casino Royale", "Eon Productions", "PG13");
 console.log(movies.title);
 console.log(movies.studio);
 console.log(movies.rating);
+
+class circle {
+  constructor(radius, color) {
+    this.radius = radius;
+    this.color = color;
+  }
+  getArea() {
+    return Math.PI * Math.pow(this.radius, 2);
+  }
+  getCircumberance() {
+    return 2 * Math.PI * this.radius;
+  }
+  getColor() {
+    return this.color;
+  }
+}
+var circleDetails = new circle(7, "Blue");
+
+console.log(circleDetails.getCircumberance().toFixed(2));
+console.log(circleDetails.getArea().toFixed(2));
+console.log(circleDetails.color);
