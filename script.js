@@ -755,3 +755,25 @@ var div1 = new Division(8, 2);
 
 div.getDiv();
 div1.getDiv();
+
+class person {
+  constructor(name, age, gender, phone, email) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.phone = phone;
+    this.email = email;
+  }
+}
+var personDetails = new person(
+  "Priya",
+  20,
+  "Female",
+  9943170622,
+  "mpriyasivaraj28@gmail.com"
+);
+console.log(personDetails.name);
+console.log(personDetails.age);
+console.log(personDetails.gender);
+console.log(personDetails.phone);
+console.log(personDetails.email);
