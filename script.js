@@ -777,3 +777,16 @@ console.log(personDetails.age);
 console.log(personDetails.gender);
 console.log(personDetails.phone);
 console.log(personDetails.email);
+
+class movie {
+  constructor(title, studio, rating) {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+let movies = new movie("Casino Royale", "Eon Productions", "PG13");
+
+console.log(movies.title);
+console.log(movies.studio);
+console.log(movies.rating);
