@@ -825,3 +825,10 @@ class uber {
 let cost = new uber(5);
 
 console.log(cost.getPrice());
+
+// Array methods
+
+// toString
+
+const fruits = ["Apple", "Orange", "Banana", "Mango"];
+console.log(fruits.toString());
