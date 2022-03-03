@@ -838,7 +838,7 @@ console.log(fruits.toString());
 const fruit = ["Apple", "Orange", "Banana", "Mango"];
 console.log(fruit.join(" "));
 
-// pop
+// pop - removes the last element
 
 const fruits1 = ["Apple", "Orange", "Banana", "Mango"];
 console.log(fruits1.pop());
@@ -850,3 +850,17 @@ const fruits2 = ["Apple", "Orange", "Banana", "Mango"];
 fruits2.push("kiwi");
 console.log(fruits2);
 console.log(fruits2.push());
+
+// Shifting Element  -removes the first element
+
+let fruits3 = ["Apple", "Orange", "Banana", "Mango"];
+fruits3.shift();
+console.log(fruits3);
+
+// Unshift - adding new element at the beginning of an array
+
+let fruits4 = ["Apple", "Orange", "Banana", "Mango"];
+fruits4.unshift("Kiwi");
+console.log(fruits4);
+console.log(fruits4.unshift());   //to find array length
+
