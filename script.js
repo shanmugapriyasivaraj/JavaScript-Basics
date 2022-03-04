@@ -988,3 +988,12 @@ for (let i = Points.length - 1; i > 0; i--) {
   Points[j] = k;
 }
 console.log(Points);
+
+// Highest array value
+
+const arrNum = [5, 55, 65, 87, 7, 2];
+arrNum.sort(function (a, b) {
+  return b - a;
+});
+console.log("Highest Array Value:", arrNum[0]);
+console.log(arrNum[arrNum.length - 1]);
