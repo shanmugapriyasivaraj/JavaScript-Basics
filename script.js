@@ -935,3 +935,56 @@ var fvrtFruits2 = ["Mango", "Apple", "Orange", "Lemon"];
 let Favorite = fvrtFruits2.slice(1);
 
 console.log(Favorite);
+
+// Sorting an arrays  -sort alphabetically
+
+let newFruits = ["Mango", "Apple", "Orange", "Lemon"];
+newFruits.sort();
+
+console.log(newFruits);
+
+// Reversing an array
+
+let newFruits1 = ["Mango", "Apple", "Orange", "Lemon"];
+newFruits1.sort();
+newFruits1.reverse();
+
+console.log(newFruits1);
+
+// Numeric sort
+
+let points = [28, 3, 9, 15, 7, 85];
+
+points.sort(function (a, b) {
+  return a - b;
+});
+
+console.log(points);
+// Descending
+
+let points1 = [28, 3, 9, 15, 7, 85];
+points1.sort(function (a, b) {
+  return b - a;
+});
+console.log(points1);
+
+// Sorting an array in random order
+
+let Numbers = [2, 5, 8, 7, 6];
+Numbers.sort(function (a, b) {
+  return 0.5 - Math.random();
+});
+
+console.log(Numbers);
+
+// Fisher yates method
+
+const Points = [40, 100, 1, 5, 25, 10];
+
+for (let i = Points.length - 1; i > 0; i--) {
+  let j = Math.floor(Math.random() * i);
+  let k = Points[i];
+  Points[i] = Points[j];
+  Points[j] = k;
+}
+console.log(Points);
