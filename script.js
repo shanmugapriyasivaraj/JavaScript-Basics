@@ -882,3 +882,29 @@ console.log(names);
 const fruits6 = ["Apple", "Orange", "Banana", "Mango"];
 delete fruits6[0];
 console.log(fruits6);
+
+// Merging Arrays
+
+Person1 = ["Anu", "karhik", "Nithya"];
+person2 = ["Jai", "Preethi", "Varun"];
+
+let persons = Person1.concat(person2);
+
+console.log(persons);
+
+// Merging Three arrays
+
+let array1 = ["Inder", "Saru"];
+let array2 = ["Adhi", "Thara"];
+let array3 = ["Vijay", "Mithra"];
+let array = array1.concat(array2, array3);
+
+console.log(array);
+
+// Merging an array with values
+
+let Arr = ["Adhi", "Thara"];
+const otr = Arr.concat("Karthik");
+
+console.log(otr);
+
