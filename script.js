@@ -908,3 +908,30 @@ const otr = Arr.concat("Karthik");
 
 console.log(otr);
 
+// Splicing     -add new items to an array
+
+var Fruit = ["Mango", "Apple", "Orange", "Lemon"];
+Fruit.splice(1, 0, "PineApple");
+
+console.log(Fruit);
+
+//
+
+var fvrtFruits = ["Mango", "Apple", "Orange", "Lemon"];
+fvrtFruits.splice(1, 2, "PineApple");
+
+console.log(fvrtFruits);
+
+// Splicing to remove element
+
+var fvrtFruits1 = ["Mango", "Apple", "Orange", "Lemon"];
+fvrtFruits1.splice(0, 2);
+
+console.log(fvrtFruits1);
+
+// Slice
+
+var fvrtFruits2 = ["Mango", "Apple", "Orange", "Lemon"];
+let Favorite = fvrtFruits2.slice(1);
+
+console.log(Favorite);
