@@ -1014,3 +1014,21 @@ function Minarray(points2) {
   return Math.min.apply(null, points2);
 }
 console.log(Minarray(points2));
+
+// Sorting object arrays
+
+const cars = [
+  { type: "Volvo", year: 2016 },
+  { type: "Saab", year: 2001 },
+  { type: "BMW", year: 2010 },
+];
+
+cars.sort(function (a, b) {
+  return a.year - b.year;
+});
+
+console.log(cars);
+
+console.log(cars[0].type + " " + cars[0].year);
+console.log(cars[1].type + " " + cars[1].year);
+console.log(cars[2].type + " " + cars[2].year);
