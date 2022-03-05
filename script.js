@@ -997,3 +997,20 @@ arrNum.sort(function (a, b) {
 });
 console.log("Highest Array Value:", arrNum[0]);
 console.log(arrNum[arrNum.length - 1]);
+
+// Max()
+
+let Points2 = [40, 100, 1, 5, 25, 10];
+
+function Maxarray(Points2) {
+  return Math.max.apply(null, Points2);
+}
+console.log(Maxarray(Points2));
+
+// Min();
+let points2 = [40, 100, 1, 5, 25, 10];
+
+function Minarray(points2) {
+  return Math.min.apply(null, points2);
+}
+console.log(Minarray(points2));
