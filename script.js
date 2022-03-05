@@ -1032,3 +1032,27 @@ console.log(cars);
 console.log(cars[0].type + " " + cars[0].year);
 console.log(cars[1].type + " " + cars[1].year);
 console.log(cars[2].type + " " + cars[2].year);
+
+// function foo() {
+//   // "Use strict";
+//   console.log(this);
+// }
+
+// Spread Operator    -
+
+array1 = [1, 2, 3, 4, 5];
+array2 = [6, 7, 8, 9, 10];
+
+console.log([...array1, ...array2]);
+
+let obj1 = {
+  a: 1,
+  b: 2,
+};
+
+let obj2 = {
+  c: 4,
+  d: 5,
+};
+
+console.log({ ...obj1, ...obj2 });
