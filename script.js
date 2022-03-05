@@ -1056,3 +1056,17 @@ let obj2 = {
 };
 
 console.log({ ...obj1, ...obj2 });
+
+// Rest operator
+
+function foo(x, ...y) {
+  console.log(x, y);
+}
+
+foo(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+function num(x, ...y) {
+  console.log(x, y);
+}
+
+num(1, 2, 3, "hi", 4, 5, 6, 7, 8, 9);
