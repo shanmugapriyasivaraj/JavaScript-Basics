@@ -1082,3 +1082,37 @@ let obj = {
   },
 };
 obj.showTask();
+
+// loop
+
+var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let index = 0; index < data.length; index++) {
+  console.log(data[index]);
+}
+
+data.forEach(function (value) {
+  console.log(value);
+});
+
+for (const v in data) {
+  console.log(v);
+}
+
+var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var arr1 = [];
+
+for (let index = 0; index < data.length; index++) {
+  if (data[index] % 2 === 0) {
+    console.log(data[index]);
+    arr1.push(data[index]);
+  }
+}
+
+data.forEach(function (value) {
+  if (value % 2 != 0) {
+    arr1.push(value);
+  }
+});
+console.log(arr1);
