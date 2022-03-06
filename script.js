@@ -1116,3 +1116,126 @@ data.forEach(function (value) {
   }
 });
 console.log(arr1);
+
+// filter
+
+let a = data.filter((value) => {
+  return value % 2 != 0;
+});
+console.log(a);
+
+// var total = 0;
+
+// data.forEach(function (value) {
+//   if (value % 2 != 0) {
+//     total = total + value;
+//   }
+// });
+// console.log(total);
+
+let result = a.reduce(function (prev, curr) {
+  return prev + curr;
+});
+
+console.log(a, result);
+
+let aa = data.map(function (value) {
+  return value * 2;
+});
+console.log(aa);
+
+let objj = [
+  {
+    postId: 1,
+    id: 1,
+    name: "id labore ex et quam laborum",
+    email: "Eliseo@gardner.biz",
+    body: "laudantium enim quasi est quidem magnam voluptate ",
+  },
+  {
+    postId: 1,
+    id: 2,
+    name: "quo vero reiciendis velit similique earum",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "est natus enim nihil est dolore omnis reiciendis et",
+  },
+  {
+    postId: 1,
+    id: 3,
+    name: "odio adipisci rerum aut animi",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "quia molestiae reprehenderit ectus saepe quia accusamus maiores nam atione",
+  },
+  {
+    postId: 1,
+    id: 4,
+    name: "alias odio sit",
+    email: "Eliseo@gardner.biz",
+    body: "non et atque\noccaecati deserunt quadolor\net qui rerum deleniti ut occaecati",
+  },
+  {
+    postId: 1,
+    id: 5,
+    name: "vero eaque aliquid doloribus et culpa",
+    email: "Eliseo@gardner.biz",
+    body: "harum non quasi et ratione\ntempore iure ex  magni quo et",
+  },
+  {
+    postId: 2,
+    id: 6,
+    name: "et fugit eligendi deleniti quidem qui sint nihil autem",
+    email: "Eliseo@gardner.biz",
+    body: "doloribus at sed quis culpa deserunt consectetur  aspernatur dolorem in",
+  },
+  {
+    postId: 2,
+    id: 7,
+    name: "repellat consequatur praesentium vel minus molestias voluptatum",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "maiores sed dolores similique lia quia et magnam dolor",
+  },
+  {
+    postId: 2,
+    id: 8,
+    name: "et omnis dolorem",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "ut voluptatem corrupti velit\nad voluptate aliquid ullam eaque",
+  },
+  {
+    postId: 2,
+    id: 9,
+    name: "provident id voluptas",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "sapiente assumenda molestiae atque\rem expedita\nquas enim ipsam minus",
+  },
+  {
+    postId: 2,
+    id: 10,
+    name: "eaque et deleniti atque tenetur ut quo ut",
+    email: "Carmen_Keeling@caroline.name",
+    body: "voluptate iusto quis nobis reprehenderit et accusamus nisi facilis",
+  },
+];
+
+// Eliseo@gardner.biz
+// Jayne_Kuhic@sydney.com
+
+objj.map((element) => {
+  console.log(element);
+});
+
+let emailArr = objj.map((element) => {
+  return element.email;
+});
+
+console.log(emailArr);
+
+// filter
+
+objj.filter((elem) => {
+  if (
+    elem.email == "Eliseo@gardner.biz" ||
+    elem.email == "Jayne_Kuhic@sydney.com"
+  )
+    console.log(elem);
+});
