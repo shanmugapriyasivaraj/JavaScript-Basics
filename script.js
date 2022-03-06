@@ -1239,3 +1239,12 @@ objj.filter((elem) => {
   )
     console.log(elem);
 });
+
+// Reduce
+
+objj.reduce((prev, curr) => {
+  prev = 1;
+  if (curr.email == "Eliseo@gardner.biz") {
+    console.log(prev, curr);
+  }
+}, 1);
