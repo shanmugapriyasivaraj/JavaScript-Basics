@@ -1248,3 +1248,40 @@ objj.reduce((prev, curr) => {
     console.log(prev, curr);
   }
 }, 1);
+
+let pets = [
+  {
+    name: "Butters",
+    age: 3,
+    type: "dog",
+  },
+  {
+    name: "Lizzy",
+    age: 6,
+    type: "dog",
+  },
+  {
+    name: "Red",
+    age: 1,
+    type: "cat",
+  },
+  {
+    name: "Joey",
+    age: 3,
+    type: "dog",
+  },
+];
+// 1 . apply filter for the JSON get the object with has dog;
+// 2. apply map for the JSON get the object with the age * 5;
+// 3. apply reduce for the JSON get the sum of all the age;
+
+let xx = pets.filter((elem) => {
+  if (elem.type == "dog") {
+    return elem;
+  }
+});
+
+let bb = xx.map(function (value) {
+  return value.age * 5;
+});
+console.log(bb);
