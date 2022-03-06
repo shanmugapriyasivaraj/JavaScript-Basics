@@ -1070,3 +1070,15 @@ function num(x, ...y) {
 }
 
 num(1, 2, 3, "hi", 4, 5, 6, 7, 8, 9);
+
+let obj = {
+  name: "Musita",
+  task: ["sleep", "eat", "walk"],
+  showTask: function () {
+    let _this = this;
+    this.task.forEach(function (task) {
+      console.log(_this.name, task);
+    });
+  },
+};
+obj.showTask();
